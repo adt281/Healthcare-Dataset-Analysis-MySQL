@@ -2,6 +2,9 @@
 
 This project uses the **Healthcare Dataset** from Kaggle to perform SQL-based data analysis. The queries cover patient demographics, medical conditions, hospital performance, billing trends, and more. The goal is to demonstrate SQL for analytics while highlighting meaningful healthcare insights.
 
+### Data Cleaning 
+Date fields were stored as text in DD-MM-YYYY format. They were converted into proper SQL `DATE` datatype using `STR_TO_DATE()` and then altered via `ALTER TABLE` to ensure consistent date handling before analysis.
+
 ## Key Areas of Analysis
 1. **Patient Demographics & Stats**  
    Basic queries to count records, find min/max/average age, and study patient distribution by age.
